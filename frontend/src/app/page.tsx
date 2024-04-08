@@ -18,7 +18,19 @@ async function fetchProdutos() {
 }
 
 export default async function Home() {
-  const produtos: Produto[] = await fetchProdutos();
+  const produtos: Produto[] = null;
+  if (!produtos)
+    return (
+      <main className="h-screen w-screen">
+        <div
+          className="w-screen h-12 flex items-center"
+          style={{ backgroundColor: '#510083' }}
+        >
+          <h1 className="text-2xl font-bold text-white px-4">Produtos</h1>
+        </div>
+        <div>Nenhum produto encontrado</div>
+      </main>
+    );
   return (
     <main className="h-screen w-screen">
       <div
