@@ -31,7 +31,7 @@ export default async function Home() {
         {produtos.map((produto) => (
           <div
             key={produto.id}
-            className="border-2 border-black rounded m-4 w-44 items-center justify-center flex flex-col p-4"
+            className="border-2 border-zinc-500 rounded m-4 w-44 items-center justify-center flex flex-col p-4"
           >
             <Image
               src={produto.image}
