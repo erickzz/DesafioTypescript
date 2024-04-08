@@ -1,0 +1,32 @@
+GET http://localhost:3000/products/
+
+###
+
+GET http://localhost:3000/products/2
+
+###
+
+POST http://localhost:3000/products/
+content-type: application/json
+
+{
+    "name": "Test Product 1",
+    "price": 100,
+    "brand": "Test Brand 1",
+    "image": "https://url-da-imagem.com"
+}
+
+###
+PUT http://localhost:3000/products/1
+content-type: application/json
+
+{
+    "name": "Test Product 2",
+    "price": 200,
+    "brand": "Test Brand 2 ",
+    "image": "https://nova-url-da-imagem.com"
+}
+
+###
+
+DELETE http://localhost:3000/products/1
