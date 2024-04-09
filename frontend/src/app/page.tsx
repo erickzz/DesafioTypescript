@@ -39,7 +39,7 @@ export default async function Home() {
       >
         <h1 className="text-2xl font-bold text-white px-4">Produtos</h1>
       </div>
-      <div className="flex mt-8">
+      <div className="flex flex-wrap mt-8">
         {produtos.map((produto) => (
           <div
             key={produto.id}
