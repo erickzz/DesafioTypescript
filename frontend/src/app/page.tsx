@@ -18,7 +18,7 @@ async function fetchProdutos() {
 }
 
 export default async function Home() {
-  const produtos: Produto[] = null;
+  const produtos: Produto[] = await fetchProdutos();
   if (!produtos)
     return (
       <main className="h-screen w-screen">
